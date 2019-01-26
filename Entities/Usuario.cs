@@ -17,8 +17,9 @@ namespace Entities
         public string Contraseña { get; set; }
         public string vContraseña { get; set; }
         public string Email { get; set; }
-        public int Telefono { get; set; }
-        public int celular { get; set; }
+        public string Telefono { get; set; }
+        public string Celular { get; set; }
+        public string Tipo { get; set; }
 
         public Usuario()
         {
