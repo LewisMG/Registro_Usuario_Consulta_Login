@@ -75,6 +75,9 @@
   <ItemGroup>
     <Content Include="Consulta\cUsuario.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="jquery\jquery-1.10.2.js" />
+    <Content Include="jquery\jquery-ui-1.10.4.custom.js" />
+    <Content Include="jquery\jquery-ui-1.10.4.custom.min.js" />
     <Content Include="LogIn.aspx" />
     <Content Include="Registros\rUsuarios.aspx" />
     <Content Include="Web.config" />
@@ -112,6 +115,7 @@
     <Compile Include="Registros\rUsuarios.aspx.designer.cs">
       <DependentUpon>rUsuarios.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Utilitarios\Utils.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -126,6 +130,16 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{72F067E9-F481-4FC9-B078-F0286B86371F}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entities\Entities.csproj">
+      <Project>{9FED3A8F-617D-44B0-B142-E11DF5F4B572}</Project>
+      <Name>Entities</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

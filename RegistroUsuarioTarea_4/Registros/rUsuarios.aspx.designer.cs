@@ -22,6 +22,24 @@ namespace RegistroUsuarioTarea_4.Registros {
         protected global::System.Web.UI.WebControls.TextBox usuarioidTextBox;
         
         /// <summary>
+        /// UsuarioIdRequiredFieldValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator UsuarioIdRequiredFieldValidator;
+        
+        /// <summary>
+        /// RegularExpressionValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator;
+        
+        /// <summary>
         /// BuscarButton control.
         /// </summary>
         /// <remarks>
@@ -49,6 +67,24 @@ namespace RegistroUsuarioTarea_4.Registros {
         protected global::System.Web.UI.WebControls.TextBox nombresTextBox;
         
         /// <summary>
+        /// NombreRequiredFieldValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator NombreRequiredFieldValidator;
+        
+        /// <summary>
+        /// NombreRegularExpressionValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator NombreRegularExpressionValidator;
+        
+        /// <summary>
         /// nomUserTextBox control.
         /// </summary>
         /// <remarks>
@@ -56,6 +92,33 @@ namespace RegistroUsuarioTarea_4.Registros {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox nomUserTextBox;
+        
+        /// <summary>
+        /// UserRequiredFieldValidator1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator UserRequiredFieldValidator1;
+        
+        /// <summary>
+        /// UserRegularExpressionValidator1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator UserRegularExpressionValidator1;
+        
+        /// <summary>
+        /// EmailTextBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox EmailTextBox;
         
         /// <summary>
         /// contraseñaTextBox control.
@@ -76,15 +139,6 @@ namespace RegistroUsuarioTarea_4.Registros {
         protected global::System.Web.UI.WebControls.TextBox VcontraseñaTextBox;
         
         /// <summary>
-        /// EmailTextBox control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox EmailTextBox;
-        
-        /// <summary>
         /// TelefonoTextBox control.
         /// </summary>
         /// <remarks>
@@ -92,6 +146,24 @@ namespace RegistroUsuarioTarea_4.Registros {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TelefonoTextBox;
+        
+        /// <summary>
+        /// TelRequiredFieldValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator TelRequiredFieldValidator;
+        
+        /// <summary>
+        /// TelRegularExpressionValidator1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator TelRegularExpressionValidator1;
         
         /// <summary>
         /// CelularTextBox control.
@@ -103,6 +175,24 @@ namespace RegistroUsuarioTarea_4.Registros {
         protected global::System.Web.UI.WebControls.TextBox CelularTextBox;
         
         /// <summary>
+        /// celRequiredFieldValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator celRequiredFieldValidator;
+        
+        /// <summary>
+        /// celRegularExpressionValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator celRegularExpressionValidator;
+        
+        /// <summary>
         /// DropDownListUsuario control.
         /// </summary>
         /// <remarks>
@@ -110,6 +200,15 @@ namespace RegistroUsuarioTarea_4.Registros {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList DropDownListUsuario;
+        
+        /// <summary>
+        /// ValidationSummary1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ValidationSummary ValidationSummary1;
         
         /// <summary>
         /// BtnNuevo control.
