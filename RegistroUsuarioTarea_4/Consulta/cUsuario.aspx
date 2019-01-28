@@ -14,7 +14,7 @@
                     <asp:ListItem></asp:ListItem>
                     <asp:ListItem>UsuarioId</asp:ListItem>
                     <asp:ListItem>Nombre</asp:ListItem>
-                    <asp:ListItem>Tipo</asp:ListItem>
+                    <asp:ListItem>Email</asp:ListItem>
                 </asp:DropDownList>
             </div>
             <div class="form-group col-md-3">
@@ -24,7 +24,7 @@
             
             <div class="col-sm-2">
                 <br>
-                <asp:Button ID="BtnBuscar" class="form-control btn btn-primary btn-sm" runat="server" Text="Buscar" />
+                <asp:Button ID="BtnBuscar" class="form-control btn btn-primary btn-sm" runat="server" Text="Buscar" OnClick="BtnBuscar_Click" />
             </div>
         </div>
         <div class="form-row justify-content-center">

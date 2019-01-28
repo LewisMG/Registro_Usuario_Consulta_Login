@@ -23,7 +23,7 @@
                                 <div class="input-group-prepend">
                                     <span class="input-group-text"><i class="fa fa-user"></i></span>
                                 </div>
-                                <input name="" class="form-control" placeholder="Email or User" type="email">
+                                <asp:TextBox ID="EmailTextBox" class="form-control" placeholder="Email or User" type="Text" runat="server"></asp:TextBox>
                             </div>
                             <!-- input-group.// -->
                         </div>
@@ -33,13 +33,13 @@
                                 <div class="input-group-prepend">
                                     <span class="input-group-text"><i class="fa fa-lock"></i></span>
                                 </div>
-                                <input class="form-control" placeholder="******" type="password">
+                                <asp:TextBox ID="ContraseñaTextBox" class="form-control" placeholder="******" type="password" runat="server"></asp:TextBox>
                             </div>
                             <!-- input-group.// -->
                         </div>
                         <!-- form-group// -->
                         <div class="form-group">
-                            <button type="submit" class="btn btn-primary btn-block">Login  </button>
+                        <asp:Button ID="LoginButton" runat="server" Text="Login" class="form-control btn btn-primary btn-lg"/>
                         </div>
                         <!-- form-group// -->
                         <a class="float-center" style="color: #0099FF" href="#">Olvidó Contraseña?</a>

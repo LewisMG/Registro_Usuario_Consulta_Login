@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using BLL;
 
 namespace RegistroUsuarioTarea_4.Consulta
 {
@@ -12,6 +13,19 @@ namespace RegistroUsuarioTarea_4.Consulta
         protected void Page_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private int ToInt(object valor)
+        {
+            int retorno = 0;
+            int.TryParse(valor.ToString(), out retorno);
+
+            return retorno;
+        }
+
+        protected void BtnBuscar_Click(object sender, EventArgs e)
+        {
+            MetodosConsulta.Consultar(ToInt(UsuarioGridView.SelectedIndex), CriterioTextBox.Text);
         }
     }
 }

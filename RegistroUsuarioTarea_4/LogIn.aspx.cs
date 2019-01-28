@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BLL;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -12,6 +13,11 @@ namespace RegistroUsuarioTarea_4
         protected void Page_Load(object sender, EventArgs e)
         {
 
+        }
+
+        protected void LoginButton_Click(object sender, EventArgs e)
+        {
+            RepositorioUsuario.Autenticar(EmailTextBox.Text, ContraseñaTextBox.Text, this);
         }
     }
 }
