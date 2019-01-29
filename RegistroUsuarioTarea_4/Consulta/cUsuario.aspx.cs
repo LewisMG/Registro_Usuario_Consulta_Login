@@ -12,7 +12,6 @@ namespace RegistroUsuarioTarea_4.Consulta
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
         }
 
         private int ToInt(object valor)
@@ -25,7 +24,8 @@ namespace RegistroUsuarioTarea_4.Consulta
 
         protected void BtnBuscar_Click(object sender, EventArgs e)
         {
-            MetodosConsulta.Consultar(ToInt(UsuarioGridView.SelectedIndex), CriterioTextBox.Text);
+            UsuarioGridView.DataSource = MetodosConsulta.Consultar(ToInt(UsuarioGridView.SelectedIndex), CriterioTextBox.Text);
+            UsuarioGridView.DataBind();
         }
     }
 }

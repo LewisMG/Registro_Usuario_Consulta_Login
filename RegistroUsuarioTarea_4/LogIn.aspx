@@ -39,7 +39,7 @@
                         </div>
                         <!-- form-group// -->
                         <div class="form-group">
-                        <asp:Button ID="LoginButton" runat="server" Text="Login" class="form-control btn btn-primary btn-lg"/>
+                        <asp:Button ID="LoginButton" runat="server" Text="Login" class="form-control btn btn-primary btn-lg" Font-Bold="True" Font-Overline="False" Font-Size="Medium"/>
                         </div>
                         <!-- form-group// -->
                         <a class="float-center" style="color: #0099FF" href="#">Olvidó Contraseña?</a>

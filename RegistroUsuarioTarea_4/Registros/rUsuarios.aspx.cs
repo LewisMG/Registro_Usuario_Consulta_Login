@@ -24,9 +24,9 @@ namespace RegistroUsuarioTarea_4.Registros
 
         private void LimpiarCampos()
         {
-            usuarioidTextBox.Text = " ";
+            usuarioidTextBox.Text = "0";
             FechaTextBox.Text = DateTime.Now.ToString("yyyy-MM-dd");
-            nombresTextBox.Text = " ";
+            nombresTextBox.Text = "";
             nomUserTextBox.Text = "";
             EmailTextBox.Text = "";
             contraseñaTextBox.Text = "";

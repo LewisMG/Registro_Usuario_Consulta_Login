@@ -12,18 +12,18 @@
                 <label class="control-label col-sm-2" for="usarioid">Usuario ID:</label>
                 <div class="col-sm-1 col-md-4 col-xs6">
                     <asp:TextBox type="Number" class="form-control" ID="usuarioidTextBox" Text="0" runat="server"></asp:TextBox>
-                    <asp:RequiredFieldValidator ID="UsuarioIdRequiredFieldValidator" runat="server" ErrorMessage="Ingrese solo numero!" ControlToValidate="usuarioidTextBox" Display="Dynamic" Font-Bold="True" ForeColor="Red">*</asp:RequiredFieldValidator>
+                    <asp:RequiredFieldValidator ID="UsuarioIdRequiredFieldValidator" runat="server" ErrorMessage="Ingrese solo numero!" ControlToValidate="usuarioidTextBox"  ValidationGroup="Buscar" Display="Dynamic" Font-Bold="True" ForeColor="Red">*</asp:RequiredFieldValidator>
                     <asp:RegularExpressionValidator ID="RegularExpressionValidator" runat="server" ErrorMessage="Ingrese solo numeros!" ControlToValidate="usuarioidTextBox" ValidationExpression="^[0-9]*$"></asp:RegularExpressionValidator>
                 </div>
                 <div class="col-sm-1 col-md-4 col-xs6">
-                    <asp:Button ID="BuscarButton" runat="server" Text="Buscar" class="btn btn-primary btn-sm" OnClick="BuscarButton_Click" />
+                    <asp:Button ID="BuscarButton" runat="server" Text="Buscar" class="btn btn-primary btn-sm" ValidationGroup="Buscar" OnClick="BuscarButton_Click" />
                 </div>
             </div>
-
+            
             <div class="form-group row">
                 <label class="control-label col-sm-2" for="FechaTextBox">Fecha:</label>
                 <div class="col-sm-1 col-md-5">
-                    <asp:TextBox ID="FechaTextBox" class="form-control input-group" TextMode="Date" runat="server" Enabled="False" />
+                    <asp:TextBox ID="FechaTextBox" class="form-control input-group" TextMode="Date" runat="server" Enabled="true" ReadOnly="True" />
                 </div>
             </div>
             <br>
@@ -56,7 +56,7 @@
             <div class="form-group row">
                 <label class="control-label col-sm-2" for="contraseña">Contraseña:</label>
                 <div class="col-sm-1 col-md-5">
-                    <asp:TextBox type="text" class="form-control" ID="contraseñaTextBox" placeholder="Ingrese Contraseña" runat="server"></asp:TextBox>
+                    <asp:TextBox type="password" class="form-control" ID="contraseñaTextBox" placeholder="Ingrese Contraseña" runat="server"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="ContraseñaRequiredFieldValidator" runat="server" ErrorMessage="No puede estar vacío" ControlToValidate="contraseñaTextBox" Display="Dynamic" Font-Bold="True" ForeColor="Red">*</asp:RequiredFieldValidator>
                     <asp:CompareValidator ID="ContraseñaCompareValidator" runat="server" ErrorMessage="Las contraseñas no coinciden" ControlToCompare="VcontraseñaTextBox" ControlToValidate="contraseñaTextBox" Display="Dynamic" ForeColor="Red" SetFocusOnError="True"></asp:CompareValidator>
                 </div>
@@ -65,7 +65,7 @@
             <div class="form-group row">
                 <label class="control-label col-sm-2" for="Vcontraseña">Verificar Contraseña:</label>
                 <div class="col-sm-1 col-md-5">
-                    <asp:TextBox type="text" class="form-control" ID="VcontraseñaTextBox" placeholder="Ingrese Contraseña" runat="server"></asp:TextBox>
+                    <asp:TextBox type="password" class="form-control" ID="VcontraseñaTextBox" placeholder="Ingrese Contraseña" runat="server"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="VcontraseñaRequiredFieldValidator" runat="server" ErrorMessage="No puede estar vacío" ControlToValidate="VcontraseñaTextBox" Display="Dynamic" Font-Bold="True" ForeColor="Red">*</asp:RequiredFieldValidator>
                     <asp:CompareValidator ID="VcontraseñaCompareValidator" runat="server" ErrorMessage="Las contraseñas no coinciden" ControlToCompare="contraseñaTextBox" ControlToValidate="VcontraseñaTextBox" Display="Dynamic" ForeColor="Red" SetFocusOnError="True"></asp:CompareValidator>
                 </div>
@@ -74,7 +74,7 @@
             <div class="form-group row">
                 <label class="control-label col-sm-2" for="TelefonoTextBox">Telefono:</label>
                 <div class="col-sm-1 col-md-5">
-                    <asp:TextBox type="" class="form-control" ID="TelefonoTextBox" runat="server" placeholder="###-###-####"></asp:TextBox>
+                    <asp:TextBox type="" class="form-control" ID="TelefonoTextBox" runat="server" placeholder="###-###-####" MaxLength="10"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="TelRequiredFieldValidator" runat="server" ErrorMessage="Ingrese solo Numero!" ControlToValidate="TelefonoTextBox" Display="Dynamic" Font-Bold="True" ForeColor="Red">*</asp:RequiredFieldValidator>
                     <asp:RegularExpressionValidator ID="TelRegularExpressionValidator1" runat="server" ErrorMessage="Ingrese solo Numero!" ControlToValidate="TelefonoTextBox" ValidationExpression="^[0-9]*$"></asp:RegularExpressionValidator>
                 </div>
@@ -83,7 +83,7 @@
             <div class="form-group row">
                 <label class="control-label col-sm-2" for="CelularTextBox">Celular:</label>
                 <div class="col-sm-1 col-md-5">
-                    <asp:TextBox type="" class="form-control" ID="CelularTextBox" runat="server" placeholder="###-###-####"></asp:TextBox>
+                    <asp:TextBox type="" class="form-control" ID="CelularTextBox" runat="server" placeholder="###-###-####" MaxLength="10"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="celRequiredFieldValidator" runat="server" ErrorMessage="Ingrese solo Numero!" ControlToValidate="CelularTextBox" Display="Dynamic" Font-Bold="True" ForeColor="Red">*</asp:RequiredFieldValidator>
                     <asp:RegularExpressionValidator ID="celRegularExpressionValidator" runat="server" ErrorMessage="Ingrese solo Numero!" ControlToValidate="CelularTextBox" ValidationExpression="^[0-9]*$"></asp:RegularExpressionValidator>
                 </div>

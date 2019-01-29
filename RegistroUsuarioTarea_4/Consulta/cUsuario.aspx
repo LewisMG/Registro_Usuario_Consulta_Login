@@ -3,7 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="jumbotron" style="background-color: #006666">
+    <div class="jumbotron" style="background-color: #E0FFFF">
         <hr>
         <h5 class="display-4" style="color: #0099FF; font-weight: bold;">Consulta de Usuarios</h5>
         <hr>
@@ -11,7 +11,7 @@
             <div class="form-group col-md-2">
                 <asp:Label Text="Filtro" ForeColor="#0099FF" runat="server" />
                 <asp:DropDownList ID="FiltroDropDownList" CssClass="form-control" runat="server">
-                    <asp:ListItem></asp:ListItem>
+                    <asp:ListItem>Todo</asp:ListItem>
                     <asp:ListItem>UsuarioId</asp:ListItem>
                     <asp:ListItem>Nombre</asp:ListItem>
                     <asp:ListItem>Email</asp:ListItem>
